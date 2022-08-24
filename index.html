@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC Game</title>
+    <script src="./rps.js" title="text/javascript"></script>
+    <style>
+        #user-call-buttons{
+            display: none ;
+        }
+        #restart{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="gameStart" type="button" onclick="gameBegins()">Start Game</button>
+    </div><br>
+    <div id="user-call-buttons">
+        <button onclick="userCall('Rock')" type="button">Rock</button>
+        <button onclick="userCall('Paper')" type="button">Paper</button>
+        <button onclick="userCall('Scissors')" type="button">Scissors</button>
+    </div>
+    <div id="text-result"></div>
+    <br>
+    <div id="restart">
+        <button onclick="restart()">Restart</button>
+    </div>
+</body>
+</html>
